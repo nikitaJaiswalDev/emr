@@ -547,5 +547,113 @@
       "format": "CSV",
       "status": "available"
     }
+  ],
+  "intakeFormTemplates": [
+    {
+      "id": "form-demo",
+      "name": "Demographic & Contact Information",
+      "description": "Patient name, DOB, address, phone, email, emergency contact",
+      "category": "demographics",
+      "required": true,
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "form-hipaa",
+      "name": "HIPAA Privacy Acknowledgment",
+      "description": "Patient acknowledges receipt of HIPAA Notice of Privacy Practices",
+      "category": "consent",
+      "required": true,
+      "estimatedMinutes": 3
+    },
+    {
+      "id": "form-medical",
+      "name": "Medical & Psychiatric History",
+      "description": "Current medications, past diagnoses, family history, allergies",
+      "category": "clinical",
+      "required": true,
+      "estimatedMinutes": 10
+    },
+    {
+      "id": "form-consent",
+      "name": "Consent to Treatment",
+      "description": "Informed consent for behavioral health treatment and telehealth",
+      "category": "consent",
+      "required": true,
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "form-roi",
+      "name": "Release of Information",
+      "description": "Authorization to share records with specified providers or payers",
+      "category": "consent",
+      "required": false,
+      "estimatedMinutes": 3
+    },
+    {
+      "id": "form-financial",
+      "name": "Financial Responsibility Agreement",
+      "description": "Patient agrees to pay copays, deductibles, and non-covered services",
+      "category": "financial",
+      "required": true,
+      "estimatedMinutes": 3
+    }
+  ],
+  "eligibilityChecks": [
+    {
+      "id": "elig-001",
+      "patientId": "pt-001",
+      "payerId": "payer-aetna",
+      "payerName": "Aetna",
+      "memberId": "AET-12-3456",
+      "status": "active",
+      "copayCents": 0,
+      "deductibleMetCents": 150000,
+      "deductibleTotalCents": 150000,
+      "visitsRemaining": 20,
+      "checkedAt": "2026-07-10T10:00:00Z",
+      "result": "verified"
+    },
+    {
+      "id": "elig-002",
+      "patientId": "pt-002",
+      "payerId": "payer-blueshield",
+      "payerName": "Blue Shield of California",
+      "memberId": "BSC-778821",
+      "status": "active",
+      "copayCents": 3000,
+      "deductibleMetCents": 50000,
+      "deductibleTotalCents": 200000,
+      "visitsRemaining": 12,
+      "checkedAt": "2026-07-10T10:05:00Z",
+      "result": "verified"
+    },
+    {
+      "id": "elig-003",
+      "patientId": "pt-003",
+      "payerId": "payer-cigna",
+      "payerName": "Cigna",
+      "memberId": "CGN-902340",
+      "status": "active",
+      "copayCents": 4500,
+      "deductibleMetCents": 0,
+      "deductibleTotalCents": 300000,
+      "visitsRemaining": 8,
+      "checkedAt": "2026-07-10T10:10:00Z",
+      "result": "verified"
+    },
+    {
+      "id": "elig-004",
+      "patientId": "pt-006",
+      "payerId": "payer-aetna",
+      "payerName": "Aetna",
+      "memberId": "AET-44-8892",
+      "status": "inactive",
+      "copayCents": 0,
+      "deductibleMetCents": 0,
+      "deductibleTotalCents": 0,
+      "visitsRemaining": 0,
+      "checkedAt": "2026-07-10T10:15:00Z",
+      "result": "action-needed"
+    }
   ]
 }
