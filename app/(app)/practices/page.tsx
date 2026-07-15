@@ -1,26 +1,22 @@
-'use client';
+"use client";
 
-import { Hospital } from 'lucide-react';
-import { PlaceholderPage } from '@/components/placeholder-page';
+import { Hospital } from "lucide-react";
 
-export default function PracticesPage() {
+export default function Page() {
   return (
-    <PlaceholderPage
-      title="Practices"
-      description="Manage practice locations and site configurations"
-      icon={Hospital}
-      features={[
-        'Add and edit practice locations',
-        'Configure telehealth vs in-person availability per site',
-        'Manage site-specific service lines and payers',
-        'View per-practice utilization metrics',
-      ]}
-      mockRows={[
-        { label: 'Harborline — Oakland', value: '1,247 visits/mo', badge: 'Active', badgeTone: 'success' },
-        { label: 'Harborline — Berkeley', value: '892 visits/mo', badge: 'Active', badgeTone: 'success' },
-        { label: 'Harborline — Telehealth', value: '2,103 visits/mo', badge: 'Active', badgeTone: 'success' },
-        { label: 'Bay Area — SF Mission', value: '634 visits/mo', badge: 'Active', badgeTone: 'success' },
-      ]}
-    />
+    <div className="mx-auto max-w-4xl">
+      <div className="flex items-center gap-4">
+        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-brand-primary/10">
+          <Hospital className="h-6 w-6 text-brand-primary" />
+        </div>
+        <div>
+          <h1 className="text-h1 font-bold text-text-primary">Practices</h1>
+          <p className="text-body text-text-secondary">Practice location management</p>
+        </div>
+      </div>
+      <div className="mt-6 rounded-md border border-info/30 bg-info/5 p-4 text-body-sm text-text-secondary">
+        This module is part of the Moonaria prototype. Interactive functionality will be added in a future iteration.
+      </div>
+    </div>
   );
 }

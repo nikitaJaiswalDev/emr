@@ -1,56 +1,44 @@
 import type { Config } from 'tailwindcss';
-import {
-  buildTailwindColors,
-  buildTailwindFontSize,
-  buildTailwindSpacing,
-  buildTailwindRadii,
-  buildTailwindFonts,
-} from './lib/theme';
 
-/**
- * Tailwind config for Moonaria.
- *
- * Every visual value is derived from lib/theme.ts — the single source of truth.
- * Tailwind utilities resolve to CSS variables (hsl(var(--color-brand-primary)),
- * var(--space-4), var(--radius-lg), …) so that editing theme.ts re-themes every
- * screen with no component changes.
- */
 const config: Config = {
-  darkMode: ['class'],
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
-      fontFamily: buildTailwindFonts(),
-      colors: buildTailwindColors(),
-      fontSize: buildTailwindFontSize(),
-      spacing: buildTailwindSpacing(),
-      borderRadius: buildTailwindRadii(),
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-      keyframes: {
-        'accordion-down': {
-          from: { height: '0' },
-          to: { height: 'var(--radix-accordion-content-height)' },
+      colors: {
+        brand: {
+          primary: 'hsl(210 80% 30%)',
+          'primary-foreground': 'hsl(0 0% 100%)',
         },
-        'accordion-up': {
-          from: { height: 'var(--radix-accordion-content-height)' },
-          to: { height: '0' },
-        },
+        surface: 'hsl(210 20% 98%)',
+        'surface-sunken': 'hsl(210 15% 95%)',
+        border: 'hsl(210 15% 88%)',
+        'text-primary': 'hsl(210 30% 15%)',
+        'text-secondary': 'hsl(210 15% 35%)',
+        'text-muted': 'hsl(210 10% 50%)',
+        sidebar: 'hsl(210 30% 12%)',
+        'sidebar-foreground': 'hsl(210 15% 85%)',
+        'sidebar-muted': 'hsl(210 10% 55%)',
+        'sidebar-border': 'hsl(210 25% 18%)',
+        'sidebar-accent': 'hsl(210 35% 20%)',
+        'sidebar-accent-foreground': 'hsl(0 0% 100%)',
+        success: 'hsl(150 55% 40%)',
+        warning: 'hsl(40 85% 50%)',
+        danger: 'hsl(0 70% 50%)',
+        info: 'hsl(200 80% 45%)',
+        accent: 'hsl(210 30% 95%)',
       },
-      animation: {
-        'accordion-down': 'accordion-down 0.2s ease-out',
-        'accordion-up': 'accordion-up 0.2s ease-out',
+      fontSize: {
+        'h1': '1.75rem',
+        'h4': '1.125rem',
+        'body': '0.875rem',
+        'body-sm': '0.8125rem',
+        'caption': '0.75rem',
       },
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  plugins: [],
 };
-
 export default config;

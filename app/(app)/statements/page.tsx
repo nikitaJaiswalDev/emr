@@ -1,25 +1,22 @@
-'use client';
+"use client";
 
-import { ReceiptText } from 'lucide-react';
-import { PlaceholderPage } from '@/components/placeholder-page';
+import { ReceiptText } from "lucide-react";
 
-export default function StatementsPage() {
+export default function Page() {
   return (
-    <PlaceholderPage
-      title="Statements"
-      description="Generate and send patient statements for outstanding balances"
-      icon={ReceiptText}
-      features={[
-        'Generate patient statements for outstanding balances',
-        'Configure statement templates and branding',
-        'Schedule recurring statement runs',
-        'Track statement delivery and payment status',
-      ]}
-      mockRows={[
-        { label: 'Jordan Avery', value: '$28.20 balance', badge: 'Ready to send', badgeTone: 'warning' },
-        { label: 'Maria Sato', value: '$98.00 balance', badge: 'Denied claim', badgeTone: 'danger' },
-        { label: 'Noah Williams', value: '$0.00 balance', badge: 'Current', badgeTone: 'success' },
-      ]}
-    />
+    <div className="mx-auto max-w-4xl">
+      <div className="flex items-center gap-4">
+        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-brand-primary/10">
+          <ReceiptText className="h-6 w-6 text-brand-primary" />
+        </div>
+        <div>
+          <h1 className="text-h1 font-bold text-text-primary">Statements</h1>
+          <p className="text-body text-text-secondary">Generate and send patient statements</p>
+        </div>
+      </div>
+      <div className="mt-6 rounded-md border border-info/30 bg-info/5 p-4 text-body-sm text-text-secondary">
+        This module is part of the Moonaria prototype. Interactive functionality will be added in a future iteration.
+      </div>
+    </div>
   );
 }

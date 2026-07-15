@@ -1,26 +1,22 @@
-'use client';
+"use client";
 
-import { FolderOpen } from 'lucide-react';
-import { PlaceholderPage } from '@/components/placeholder-page';
+import { FolderOpen } from "lucide-react";
 
-export default function DocumentsPage() {
+export default function Page() {
   return (
-    <PlaceholderPage
-      title="Documents"
-      description="Access your clinical documents, forms, and records"
-      icon={FolderOpen}
-      features={[
-        'Download consent forms and signed documents',
-        'View clinical summaries and treatment plans',
-        'Access intake and assessment forms',
-        'Request records or document corrections',
-      ]}
-      mockRows={[
-        { label: 'Session Recording Consent — Jul 7', value: 'Signed Jul 7, 2026', badge: 'Signed', badgeTone: 'success' },
-        { label: 'Telehealth Consent — Jun 23', value: 'Signed Jun 23, 2026', badge: 'Signed', badgeTone: 'success' },
-        { label: 'Intake Packet', value: 'Completed Jun 15, 2026', badge: 'On file', badgeTone: 'success' },
-        { label: 'Treatment Plan — CBT for GAD', value: 'Updated Jul 7, 2026', badge: 'Active', badgeTone: 'info' },
-      ]}
-    />
+    <div className="mx-auto max-w-4xl">
+      <div className="flex items-center gap-4">
+        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-brand-primary/10">
+          <FolderOpen className="h-6 w-6 text-brand-primary" />
+        </div>
+        <div>
+          <h1 className="text-h1 font-bold text-text-primary">Documents</h1>
+          <p className="text-body text-text-secondary">Access your health documents</p>
+        </div>
+      </div>
+      <div className="mt-6 rounded-md border border-info/30 bg-info/5 p-4 text-body-sm text-text-secondary">
+        This module is part of the Moonaria prototype. Interactive functionality will be added in a future iteration.
+      </div>
+    </div>
   );
 }

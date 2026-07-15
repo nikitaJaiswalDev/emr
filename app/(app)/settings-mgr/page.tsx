@@ -1,26 +1,22 @@
-'use client';
+"use client";
 
-import { Settings } from 'lucide-react';
-import { PlaceholderPage } from '@/components/placeholder-page';
+import { Settings } from "lucide-react";
 
-export default function SettingsMgrPage() {
+export default function Page() {
   return (
-    <PlaceholderPage
-      title="Practice Settings"
-      description="Configure practice-level preferences, services, and workflows"
-      icon={Settings}
-      features={[
-        'Manage practice profile and location settings',
-        'Configure appointment types and session durations',
-        'Set provider schedules and availability',
-        'Customize clinical note templates',
-      ]}
-      mockRows={[
-        { label: 'Session types', value: '6 configured', badge: 'Active', badgeTone: 'success' },
-        { label: 'Default duration', value: '50 minutes', badge: 'Standard', badgeTone: 'info' },
-        { label: 'Telehealth platform', value: 'Integrated video', badge: 'Connected', badgeTone: 'success' },
-        { label: 'Reminder cadence', value: '24h + 1h before', badge: 'Active', badgeTone: 'success' },
-      ]}
-    />
+    <div className="mx-auto max-w-4xl">
+      <div className="flex items-center gap-4">
+        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-brand-primary/10">
+          <Settings className="h-6 w-6 text-brand-primary" />
+        </div>
+        <div>
+          <h1 className="text-h1 font-bold text-text-primary">Settings</h1>
+          <p className="text-body text-text-secondary">Practice settings and preferences</p>
+        </div>
+      </div>
+      <div className="mt-6 rounded-md border border-info/30 bg-info/5 p-4 text-body-sm text-text-secondary">
+        This module is part of the Moonaria prototype. Interactive functionality will be added in a future iteration.
+      </div>
+    </div>
   );
 }

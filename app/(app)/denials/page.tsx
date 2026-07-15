@@ -1,25 +1,22 @@
-'use client';
+"use client";
 
-import { AlertTriangle } from 'lucide-react';
-import { PlaceholderPage } from '@/components/placeholder-page';
+import { AlertTriangle } from "lucide-react";
 
-export default function DenialsPage() {
+export default function Page() {
   return (
-    <PlaceholderPage
-      title="Denials"
-      description="Manage denied claims, appeals, and rebilling workflows"
-      icon={AlertTriangle}
-      features={[
-        'View and triage denied claims by reason code',
-        'Initiate appeals with supporting documentation',
-        'Track appeal status and payer responses',
-        'Identify denial patterns for process improvement',
-      ]}
-      mockRows={[
-        { label: 'Maria Sato — CPT 90834', value: 'CO-97: Bundled service', badge: 'Appeal needed', badgeTone: 'danger' },
-        { label: 'Aaliyah Johnson — CPT 90832', value: 'CO-16: Missing info', badge: 'Rebill', badgeTone: 'warning' },
-        { label: 'Marcus Cole — CPT 90837', value: 'CO-50: Non-covered', badge: 'Under review', badgeTone: 'warning' },
-      ]}
-    />
+    <div className="mx-auto max-w-4xl">
+      <div className="flex items-center gap-4">
+        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-brand-primary/10">
+          <AlertTriangle className="h-6 w-6 text-brand-primary" />
+        </div>
+        <div>
+          <h1 className="text-h1 font-bold text-text-primary">Denials</h1>
+          <p className="text-body text-text-secondary">Manage denied claims and appeals</p>
+        </div>
+      </div>
+      <div className="mt-6 rounded-md border border-info/30 bg-info/5 p-4 text-body-sm text-text-secondary">
+        This module is part of the Moonaria prototype. Interactive functionality will be added in a future iteration.
+      </div>
+    </div>
   );
 }

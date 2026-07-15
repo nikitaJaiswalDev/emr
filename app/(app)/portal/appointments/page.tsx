@@ -1,26 +1,22 @@
-'use client';
+"use client";
 
-import { CalendarDays } from 'lucide-react';
-import { PlaceholderPage } from '@/components/placeholder-page';
+import { CalendarDays } from "lucide-react";
 
-export default function AppointmentsPage() {
+export default function Page() {
   return (
-    <PlaceholderPage
-      title="My Appointments"
-      description="View your upcoming and past appointments"
-      icon={CalendarDays}
-      features={[
-        'View upcoming and past sessions in one place',
-        'Join telehealth sessions directly from the portal',
-        'Request to reschedule or cancel appointments',
-        'View session summaries and provider notes',
-      ]}
-      mockRows={[
-        { label: 'Jul 13, 9:00 AM', value: 'Dr. Nair — Telehealth', badge: 'Upcoming', badgeTone: 'info' },
-        { label: 'Jul 16, 10:00 AM', value: 'Dr. Nair — In-Person', badge: 'Upcoming', badgeTone: 'info' },
-        { label: 'Jul 7, 9:00 AM', value: 'Dr. Nair — Telehealth', badge: 'Completed', badgeTone: 'success' },
-        { label: 'Jun 30, 9:00 AM', value: 'Dr. Nair — Telehealth', badge: 'Completed', badgeTone: 'success' },
-      ]}
-    />
+    <div className="mx-auto max-w-4xl">
+      <div className="flex items-center gap-4">
+        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-brand-primary/10">
+          <CalendarDays className="h-6 w-6 text-brand-primary" />
+        </div>
+        <div>
+          <h1 className="text-h1 font-bold text-text-primary">Appointments</h1>
+          <p className="text-body text-text-secondary">View and manage your appointments</p>
+        </div>
+      </div>
+      <div className="mt-6 rounded-md border border-info/30 bg-info/5 p-4 text-body-sm text-text-secondary">
+        This module is part of the Moonaria prototype. Interactive functionality will be added in a future iteration.
+      </div>
+    </div>
   );
 }

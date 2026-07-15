@@ -1,27 +1,22 @@
-'use client';
+"use client";
 
-import { Users } from 'lucide-react';
-import { PlaceholderPage } from '@/components/placeholder-page';
+import { Users } from "lucide-react";
 
-export default function UsersPage() {
+export default function Page() {
   return (
-    <PlaceholderPage
-      title="Users & Roles"
-      description="Manage user accounts, role assignments, and access permissions"
-      icon={Users}
-      features={[
-        'Invite new users and assign roles',
-        'Manage role-based access controls (RBAC)',
-        'View audit trails for user actions',
-        'Deactivate or suspend user accounts',
-      ]}
-      mockRows={[
-        { label: 'Dr. Priya Nair', value: 'Clinical Supervisor', badge: 'Active', badgeTone: 'success' },
-        { label: 'Maya Castellanos', value: 'Associate Provider', badge: 'Active', badgeTone: 'success' },
-        { label: 'James Park', value: 'Biller', badge: 'Active', badgeTone: 'success' },
-        { label: 'Sarah Chen', value: 'Practice Manager', badge: 'Active', badgeTone: 'success' },
-        { label: 'Mike Torres', value: 'Front Desk', badge: 'Active', badgeTone: 'success' },
-      ]}
-    />
+    <div className="mx-auto max-w-4xl">
+      <div className="flex items-center gap-4">
+        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-brand-primary/10">
+          <Users className="h-6 w-6 text-brand-primary" />
+        </div>
+        <div>
+          <h1 className="text-h1 font-bold text-text-primary">Users</h1>
+          <p className="text-body text-text-secondary">User management</p>
+        </div>
+      </div>
+      <div className="mt-6 rounded-md border border-info/30 bg-info/5 p-4 text-body-sm text-text-secondary">
+        This module is part of the Moonaria prototype. Interactive functionality will be added in a future iteration.
+      </div>
+    </div>
   );
 }

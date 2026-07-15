@@ -1,26 +1,22 @@
-'use client';
+"use client";
 
-import { BadgeCheck } from 'lucide-react';
-import { PlaceholderPage } from '@/components/placeholder-page';
+import { BadgeCheck } from "lucide-react";
 
-export default function EligibilityPage() {
+export default function Page() {
   return (
-    <PlaceholderPage
-      title="Eligibility"
-      description="Verify patient insurance coverage and benefits in real time"
-      icon={BadgeCheck}
-      features={[
-        'Run real-time eligibility checks against payer APIs',
-        'View coverage status, copay, and deductible remaining',
-        'Batch-check eligibility for upcoming appointments',
-        'Log eligibility responses for audit trail',
-      ]}
-      mockRows={[
-        { label: 'Jordan Avery — Aetna', value: 'Active · $0 copay', badge: 'Verified', badgeTone: 'success' },
-        { label: 'Maria Sato — Blue Shield', value: 'Active · $30 copay', badge: 'Verified', badgeTone: 'success' },
-        { label: 'Devon Park — Cigna', value: 'Active · $45 copay', badge: 'Verified', badgeTone: 'success' },
-        { label: 'Noah Williams — Aetna', value: 'Inactive', badge: 'Action needed', badgeTone: 'danger' },
-      ]}
-    />
+    <div className="mx-auto max-w-4xl">
+      <div className="flex items-center gap-4">
+        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-brand-primary/10">
+          <BadgeCheck className="h-6 w-6 text-brand-primary" />
+        </div>
+        <div>
+          <h1 className="text-h1 font-bold text-text-primary">Eligibility</h1>
+          <p className="text-body text-text-secondary">Verify patient insurance coverage</p>
+        </div>
+      </div>
+      <div className="mt-6 rounded-md border border-info/30 bg-info/5 p-4 text-body-sm text-text-secondary">
+        This module is part of the Moonaria prototype. Interactive functionality will be added in a future iteration.
+      </div>
+    </div>
   );
 }

@@ -1,25 +1,22 @@
-'use client';
+"use client";
 
-import { UserCheck } from 'lucide-react';
-import { PlaceholderPage } from '@/components/placeholder-page';
+import { UserCheck } from "lucide-react";
 
-export default function CheckInPage() {
+export default function Page() {
   return (
-    <PlaceholderPage
-      title="Check-In"
-      description="Manage front desk check-in and waiting room workflow"
-      icon={UserCheck}
-      features={[
-        'Check in patients for scheduled appointments',
-        'Verify insurance and collect copays at check-in',
-        'Notify providers when patients arrive',
-        'Manage waiting room status and wait times',
-      ]}
-      mockRows={[
-        { label: 'Jordan Avery', value: '9:00 AM — Dr. Nair', badge: 'Checked in', badgeTone: 'success' },
-        { label: 'Maria Sato', value: '10:30 AM — Maya C.', badge: 'Waiting', badgeTone: 'warning' },
-        { label: 'Devon Park', value: '1:00 PM — Dr. Brennan', badge: 'Not arrived', badgeTone: 'info' },
-      ]}
-    />
+    <div className="mx-auto max-w-4xl">
+      <div className="flex items-center gap-4">
+        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-brand-primary/10">
+          <UserCheck className="h-6 w-6 text-brand-primary" />
+        </div>
+        <div>
+          <h1 className="text-h1 font-bold text-text-primary">Check-In</h1>
+          <p className="text-body text-text-secondary">Patient check-in and front desk operations</p>
+        </div>
+      </div>
+      <div className="mt-6 rounded-md border border-info/30 bg-info/5 p-4 text-body-sm text-text-secondary">
+        This module is part of the Moonaria prototype. Interactive functionality will be added in a future iteration.
+      </div>
+    </div>
   );
 }

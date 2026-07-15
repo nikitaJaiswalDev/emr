@@ -1,25 +1,22 @@
-'use client';
+"use client";
 
-import { MessageSquare } from 'lucide-react';
-import { PlaceholderPage } from '@/components/placeholder-page';
+import { MessageSquare } from "lucide-react";
 
-export default function PortalMessagesPage() {
+export default function Page() {
   return (
-    <PlaceholderPage
-      title="Messages"
-      description="Secure messaging with your care team"
-      icon={MessageSquare}
-      features={[
-        'Send and receive secure messages with your providers',
-        'View message history by conversation',
-        'Receive appointment reminders and follow-ups',
-        'Attach documents to messages',
-      ]}
-      mockRows={[
-        { label: 'Dr. Priya Nair', value: 'Last: Jul 10', badge: '2 unread', badgeTone: 'warning' },
-        { label: 'Care Team', value: 'Last: Jul 8', badge: '1 unread', badgeTone: 'warning' },
-        { label: 'Billing Office', value: 'Last: Jul 5', badge: 'Read', badgeTone: 'success' },
-      ]}
-    />
+    <div className="mx-auto max-w-4xl">
+      <div className="flex items-center gap-4">
+        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-brand-primary/10">
+          <MessageSquare className="h-6 w-6 text-brand-primary" />
+        </div>
+        <div>
+          <h1 className="text-h1 font-bold text-text-primary">Messages</h1>
+          <p className="text-body text-text-secondary">Secure message your care team</p>
+        </div>
+      </div>
+      <div className="mt-6 rounded-md border border-info/30 bg-info/5 p-4 text-body-sm text-text-secondary">
+        This module is part of the Moonaria prototype. Interactive functionality will be added in a future iteration.
+      </div>
+    </div>
   );
 }

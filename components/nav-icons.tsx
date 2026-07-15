@@ -1,70 +1,58 @@
-'use client';
-
 import {
   LayoutDashboard,
-  Building2,
-  Hospital,
+  BarChart3,
   Users,
+  Stethoscope,
   CreditCard,
   ShieldCheck,
-  BarChart3,
   Settings,
   CalendarDays,
-  Stethoscope,
-  ClipboardList,
   FileText,
   ClipboardPenLine,
   Pill,
   ListTodo,
   MessageSquare,
-  GraduationCap,
-  FolderSearch,
-  FileCheck2,
+  Receipt,
+  Wallet,
   AlertTriangle,
-  DollarSign,
   BadgeCheck,
   ReceiptText,
   UserCheck,
+  ClipboardList,
   FolderOpen,
-  Receipt,
-  Wallet,
+  Building2,
+  Hospital,
+  Moon,
   type LucideIcon,
 } from 'lucide-react';
 
-/**
- * Maps the string icon names used in lib/mockData.ts nav items to their Lucide
- * components. Keeping this in one place means mockData stays free of JSX imports.
- */
-export const navIcons: Record<string, LucideIcon> = {
+const ICON_MAP: Record<string, LucideIcon> = {
   LayoutDashboard,
-  Building2,
-  Hospital,
+  BarChart3,
   Users,
+  Stethoscope,
   CreditCard,
   ShieldCheck,
-  BarChart3,
   Settings,
   CalendarDays,
-  Stethoscope,
-  ClipboardList,
   FileText,
   ClipboardPenLine,
   Pill,
   ListTodo,
   MessageSquare,
-  GraduationCap,
-  FolderSearch,
-  FileCheck2,
+  Receipt,
+  Wallet,
   AlertTriangle,
-  DollarSign,
   BadgeCheck,
   ReceiptText,
   UserCheck,
+  ClipboardList,
   FolderOpen,
-  Receipt,
-  Wallet,
+  Building2,
+  Hospital,
+  Moon,
 };
 
 export function getNavIcon(name: string): LucideIcon {
-  return navIcons[name] ?? LayoutDashboard;
+  return ICON_MAP[name] ?? LayoutDashboard;
 }

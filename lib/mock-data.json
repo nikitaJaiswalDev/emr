@@ -1,247 +1,35 @@
 {
-  "users": [
-    {
-      "id": "user-001",
-      "name": "Dana Whitlock",
-      "email": "dana.whitlock@harborline.org",
-      "password": "harborline2026",
-      "role": "org-owner",
-      "orgId": "org-harborline",
-      "title": "Organization Owner",
-      "initials": "DW"
-    },
-    {
-      "id": "user-002",
-      "name": "Marcus Reyes",
-      "email": "marcus.reyes@harborline.org",
-      "password": "harborline2026",
-      "role": "practice-manager",
-      "orgId": "org-harborline",
-      "title": "Practice Manager",
-      "initials": "MR"
-    },
-    {
-      "id": "user-003",
-      "name": "Dr. Priya Nair",
-      "email": "priya.nair@harborline.org",
-      "password": "harborline2026",
-      "role": "provider",
-      "orgId": "org-harborline",
-      "title": "Licensed Psychologist",
-      "initials": "PN"
-    },
-    {
-      "id": "user-004",
-      "name": "Dr. Eli Brennan",
-      "email": "eli.brennan@harborline.org",
-      "password": "harborline2026",
-      "role": "provider",
-      "orgId": "org-harborline",
-      "title": "Psychiatrist",
-      "initials": "EB"
-    },
-    {
-      "id": "user-005",
-      "name": "Sandra Okafor",
-      "email": "sandra.okafor@harborline.org",
-      "password": "harborline2026",
-      "role": "clinical-supervisor",
-      "orgId": "org-harborline",
-      "title": "Clinical Supervisor",
-      "initials": "SO"
-    },
-    {
-      "id": "user-006",
-      "name": "Tomás Aguilar",
-      "email": "tomas.aguilar@harborline.org",
-      "password": "harborline2026",
-      "role": "biller",
-      "orgId": "org-harborline",
-      "title": "Billing Specialist",
-      "initials": "TA"
-    },
-    {
-      "id": "user-007",
-      "name": "Hannah Lindqvist",
-      "email": "hannah.lindqvist@harborline.org",
-      "password": "harborline2026",
-      "role": "front-desk",
-      "orgId": "org-harborline",
-      "title": "Front Desk Coordinator",
-      "initials": "HL"
-    },
-    {
-      "id": "user-008",
-      "name": "Jordan Avery",
-      "email": "jordan.avery@example.org",
-      "password": "patient2026",
-      "role": "patient",
-      "orgId": "org-harborline",
-      "title": "Patient",
-      "initials": "JA"
-    },
-    {
-      "id": "user-009",
-      "name": "Maya Castellanos",
-      "email": "maya.castellanos@harborline.org",
-      "password": "harborline2026",
-      "role": "provider",
-      "orgId": "org-harborline",
-      "title": "Associate Therapist (LPC Intern)",
-      "initials": "MC"
-    },
-    {
-      "id": "user-010",
-      "name": "Greg Tanaka",
-      "email": "greg.tanaka@harborline.org",
-      "password": "harborline2026",
-      "role": "provider",
-      "orgId": "org-harborline",
-      "title": "LCSW",
-      "initials": "GT"
-    },
-    {
-      "id": "user-011",
-      "name": "Aisha Rahman",
-      "email": "aisha.rahman@solace.org",
-      "password": "solace2026",
-      "role": "practice-manager",
-      "orgId": "org-solace",
-      "title": "Practice Manager",
-      "initials": "AR"
-    }
-  ],
   "organizations": [
     {
       "id": "org-harborline",
       "name": "Harborline Behavioral Health",
       "shortName": "Harborline",
-      "initials": "HB",
-      "tagline": "Outpatient & IOP across the Pacific Northwest",
       "plan": "professional",
-      "providerCount": 12
-    },
-    {
-      "id": "org-solace",
-      "name": "Solace Community Counseling",
-      "shortName": "Solace",
-      "initials": "SC",
-      "tagline": "Community mental health serving 4 counties",
-      "plan": "professional",
-      "providerCount": 8
-    },
-    {
-      "id": "org-northpoint",
-      "name": "Northpoint Psychiatry Group",
-      "shortName": "Northpoint",
-      "initials": "NP",
-      "tagline": "Psychiatry & medication management",
-      "plan": "enterprise",
-      "providerCount": 34
+      "providerCount": 12,
+      "practiceCount": 4
     }
   ],
-  "providers": [
-    {
-      "userId": "user-003",
-      "npi": "1486793210",
-      "licenseNumber": "PSY-29381",
-      "licenseState": "OR",
-      "taxonomyCode": "103T00000X",
-      "isAssociate": false,
-      "supervisorId": null,
-      "completion": 100,
-      "credentials": [
-        { "payerId": "payer-aetna", "payerName": "Aetna", "status": "credentialed" },
-        { "payerId": "payer-blueshield", "payerName": "Blue Shield of California", "status": "credentialed" },
-        { "payerId": "payer-cigna", "payerName": "Cigna", "status": "pending" },
-        { "payerId": "payer-medicaid", "payerName": "State Medicaid", "status": "credentialed" },
-        { "payerId": "payer-medicare", "payerName": "Medicare Part B", "status": "not-credentialed" }
-      ]
-    },
-    {
-      "userId": "user-004",
-      "npi": "1938472010",
-      "licenseNumber": "MD-77321",
-      "licenseState": "WA",
-      "taxonomyCode": "2084P0800X",
-      "isAssociate": false,
-      "supervisorId": null,
-      "completion": 100,
-      "credentials": [
-        { "payerId": "payer-aetna", "payerName": "Aetna", "status": "credentialed" },
-        { "payerId": "payer-blueshield", "payerName": "Blue Shield of California", "status": "credentialed" },
-        { "payerId": "payer-cigna", "payerName": "Cigna", "status": "credentialed" },
-        { "payerId": "payer-medicaid", "payerName": "State Medicaid", "status": "credentialed" },
-        { "payerId": "payer-medicare", "payerName": "Medicare Part B", "status": "credentialed" }
-      ]
-    },
-    {
-      "userId": "user-009",
-      "npi": "1726403928",
-      "licenseNumber": "LPC-10432",
-      "licenseState": "OR",
-      "taxonomyCode": "101Y00000X",
-      "isAssociate": true,
-      "supervisorId": "user-003",
-      "completion": 60,
-      "credentials": [
-        { "payerId": "payer-aetna", "payerName": "Aetna", "status": "pending" },
-        { "payerId": "payer-blueshield", "payerName": "Blue Shield of California", "status": "not-credentialed" },
-        { "payerId": "payer-cigna", "payerName": "Cigna", "status": "not-credentialed" },
-        { "payerId": "payer-medicaid", "payerName": "State Medicaid", "status": "pending" },
-        { "payerId": "payer-medicare", "payerName": "Medicare Part B", "status": "not-credentialed" }
-      ]
-    }
+  "users": [
+    { "id": "user-001", "name": "Dana Whitlock", "email": "dana@harborline.org", "role": "org-owner", "title": "Executive Director", "orgId": "org-harborline", "initials": "DW" },
+    { "id": "user-003", "name": "Dr. Priya Nair", "email": "priya@harborline.org", "role": "provider", "title": "Licensed Psychologist", "orgId": "org-harborline", "initials": "PN" },
+    { "id": "user-004", "name": "Dr. Marcus Lee", "email": "marcus@harborline.org", "role": "provider", "title": "Psychiatrist", "orgId": "org-harborline", "initials": "ML" },
+    { "id": "user-009", "name": "Maya Castellanos", "email": "maya@harborline.org", "role": "provider", "title": "Associate Therapist", "orgId": "org-harborline", "initials": "MC" },
+    { "id": "user-010", "name": "James Park", "email": "james@harborline.org", "role": "biller", "title": "Billing Specialist", "orgId": "org-harborline", "initials": "JP" },
+    { "id": "user-011", "name": "Mike Torres", "email": "mike@harborline.org", "role": "front-desk", "title": "Front Desk Coordinator", "orgId": "org-harborline", "initials": "MT" }
+  ],
+  "patients": [
+    { "id": "pt-001", "name": "Jordan Avery", "dateOfBirth": "1992-03-14", "isMinor": false, "payerId": "payer-aetna", "memberId": "AET-12-3456", "gender": "Male", "phone": "(510) 555-0142", "email": "jordan.avery@email.com", "address": "1428 Linden St, Oakland, CA 94607", "emergencyContactName": "Casey Avery", "emergencyContactPhone": "(510) 555-0143", "groupNumber": "GRP-AET-001", "status": "active", "assignedProviderId": "user-003", "admissionProgress": ["demographics","insurance","eligibility","intake-forms","review","admit"], "submittedFormIds": ["form-demo","form-hipaa","form-medical","form-consent","form-roi"], "createdAt": "2026-05-15" },
+    { "id": "pt-002", "name": "Maria Sato", "dateOfBirth": "1985-07-22", "isMinor": false, "payerId": "payer-blueshield", "memberId": "BSC-778821", "gender": "Female", "phone": "(510) 555-0150", "email": "maria.sato@email.com", "address": "920 Ashby Ave, Berkeley, CA 94703", "emergencyContactName": "Kenji Sato", "emergencyContactPhone": "(510) 555-0151", "groupNumber": "GRP-BSC-200", "status": "active", "assignedProviderId": "user-009", "admissionProgress": ["demographics","insurance","eligibility","intake-forms","review","admit"], "submittedFormIds": ["form-demo","form-hipaa","form-medical","form-consent","form-roi"], "createdAt": "2026-05-20" },
+    { "id": "pt-003", "name": "Devon Park", "dateOfBirth": "1990-11-08", "isMinor": false, "payerId": "payer-cigna", "memberId": "CGN-902340", "gender": "Male", "phone": "(503) 555-0160", "email": "devon.park@email.com", "address": "515 NW Marshall St, Portland, OR 97209", "emergencyContactName": "Lisa Park", "emergencyContactPhone": "(503) 555-0161", "groupNumber": "GRP-CGN-500", "status": "active", "assignedProviderId": "user-004", "admissionProgress": ["demographics","insurance","eligibility","intake-forms","review","admit"], "submittedFormIds": ["form-demo","form-hipaa","form-medical","form-consent"], "createdAt": "2026-06-01" },
+    { "id": "pt-004", "name": "Emma Rios", "dateOfBirth": "2012-05-19", "isMinor": true, "guardianName": "Lucia Rios", "payerId": "payer-medicaid", "memberId": "MCD-44712", "gender": "Female", "phone": "(510) 555-0170", "email": "lucia.rios@email.com", "address": "330 Fruitvale Ave, Oakland, CA 94601", "emergencyContactName": "Lucia Rios", "emergencyContactPhone": "(510) 555-0170", "status": "active", "assignedProviderId": "user-003", "admissionProgress": ["demographics","insurance","eligibility","intake-forms","review","admit"], "submittedFormIds": ["form-demo","form-hipaa","form-medical","form-consent","form-roi"], "createdAt": "2026-06-10" },
+    { "id": "pt-005", "name": "Noah Williams", "dateOfBirth": "2010-09-03", "isMinor": true, "guardianName": "Sarah Williams", "payerId": "payer-aetna", "memberId": "AET-44-8892", "gender": "Male", "phone": "(510) 555-0180", "email": "sarah.williams@email.com", "address": "770 Telegraph Ave, Oakland, CA 94612", "emergencyContactName": "Sarah Williams", "emergencyContactPhone": "(510) 555-0180", "status": "active", "assignedProviderId": "user-003", "admissionProgress": ["demographics","insurance","eligibility","intake-forms","review","admit"], "submittedFormIds": ["form-demo","form-hipaa","form-medical","form-consent"], "createdAt": "2026-06-20" },
+    { "id": "pt-006", "name": "Aaliyah Johnson", "dateOfBirth": "1998-12-01", "isMinor": false, "payerId": "payer-medicaid", "memberId": "MCD-88201", "gender": "Female", "phone": "(510) 555-0190", "email": "aaliyah.j@email.com", "address": "210 Adeline St, Oakland, CA 94607", "emergencyContactName": "Michael Johnson", "emergencyContactPhone": "(510) 555-0191", "status": "active", "assignedProviderId": "user-009", "admissionProgress": ["demographics","insurance","eligibility","intake-forms","review","admit"], "submittedFormIds": ["form-demo","form-hipaa","form-medical","form-consent","form-roi"], "createdAt": "2026-06-25" }
   ],
   "practices": [
-    {
-      "id": "practice-001",
-      "orgId": "org-harborline",
-      "name": "Harborline — Oakland",
-      "address": "1200 Broadway, Suite 410, Oakland, CA 94612",
-      "phone": "(510) 555-0180",
-      "timeZone": "America/Los_Angeles",
-      "serviceLines": ["Outpatient Individual", "Outpatient Group", "IOP"],
-      "modalities": ["telehealth", "in-person"],
-      "visitsPerMonth": 1247,
-      "status": "active"
-    },
-    {
-      "id": "practice-002",
-      "orgId": "org-harborline",
-      "name": "Harborline — Berkeley",
-      "address": "2150 Shattuck Ave, Berkeley, CA 94704",
-      "phone": "(510) 555-0192",
-      "timeZone": "America/Los_Angeles",
-      "serviceLines": ["Outpatient Individual", "Outpatient Family"],
-      "modalities": ["in-person"],
-      "visitsPerMonth": 892,
-      "status": "active"
-    },
-    {
-      "id": "practice-003",
-      "orgId": "org-harborline",
-      "name": "Harborline — Telehealth",
-      "address": "Remote / Virtual",
-      "phone": "(510) 555-0180",
-      "timeZone": "America/Los_Angeles",
-      "serviceLines": ["Outpatient Individual", "Outpatient Group", "IOP", "Psychiatry"],
-      "modalities": ["telehealth"],
-      "visitsPerMonth": 2103,
-      "status": "active"
-    },
-    {
-      "id": "practice-004",
-      "orgId": "org-harborline",
-      "name": "Harborline — Portland",
-      "address": "800 SW Broadway, Portland, OR 97205",
-      "phone": "(503) 555-0210",
-      "timeZone": "America/Los_Angeles",
-      "serviceLines": ["Outpatient Individual", "Psychiatry"],
-      "modalities": ["telehealth", "in-person"],
-      "visitsPerMonth": 634,
-      "status": "active"
-    }
+    { "id": "practice-001", "orgId": "org-harborline", "name": "Harborline — Oakland", "address": "1200 Broadway, Suite 410, Oakland, CA 94612", "phone": "(510) 555-0180", "timeZone": "America/Los_Angeles", "serviceLines": ["Outpatient Individual","Outpatient Group","IOP"], "modalities": ["telehealth","in-person"], "visitsPerMonth": 1247, "status": "active" },
+    { "id": "practice-002", "orgId": "org-harborline", "name": "Harborline — Berkeley", "address": "2150 Shattuck Ave, Berkeley, CA 94704", "phone": "(510) 555-0192", "timeZone": "America/Los_Angeles", "serviceLines": ["Outpatient Individual","Outpatient Family"], "modalities": ["in-person"], "visitsPerMonth": 892, "status": "active" },
+    { "id": "practice-003", "orgId": "org-harborline", "name": "Harborline — Telehealth", "address": "Remote / Virtual", "phone": "(510) 555-0180", "timeZone": "America/Los_Angeles", "serviceLines": ["Outpatient Individual","Outpatient Group","IOP","Psychiatry"], "modalities": ["telehealth"], "visitsPerMonth": 2103, "status": "active" },
+    { "id": "practice-004", "orgId": "org-harborline", "name": "Harborline — Portland", "address": "800 SW Broadway, Portland, OR 97205", "phone": "(503) 555-0210", "timeZone": "America/Los_Angeles", "serviceLines": ["Outpatient Individual","Psychiatry"], "modalities": ["telehealth","in-person"], "visitsPerMonth": 634, "status": "active" }
   ],
   "orgOnboarding": [
     {
@@ -258,8 +46,8 @@
       "billingContactName": "Marcus Reyes",
       "billingContactEmail": "marcus.reyes@harborline.org",
       "billingContactPhone": "(510) 555-0181",
-      "statesServed": ["CA", "OR", "WA"],
-      "serviceTypes": ["Outpatient Individual", "Outpatient Group", "IOP", "Psychiatry"],
+      "statesServed": ["CA","OR","WA"],
+      "serviceTypes": ["Outpatient Individual","Outpatient Group","IOP","Psychiatry"],
       "providerCount": 12,
       "currentSystem": "SimplePractice",
       "salesRepName": "Jordan Lee",
@@ -267,90 +55,11 @@
       "dealCloseDate": "2026-06-15",
       "onboardingCompletedDate": "2026-06-28",
       "documents": [
-        {
-          "id": "doc-baa",
-          "name": "Business Associate Agreement (BAA)",
-          "type": "BAA",
-          "status": "signed",
-          "signedBy": "Dana Whitlock",
-          "signedDate": "2026-06-20",
-          "fileName": "Harborline_BAA_Executed.pdf"
-        },
-        {
-          "id": "doc-w9",
-          "name": "W-9 Tax Form",
-          "type": "W-9",
-          "status": "signed",
-          "signedBy": "Dana Whitlock",
-          "signedDate": "2026-06-18",
-          "fileName": "Harborline_W9.pdf"
-        },
-        {
-          "id": "doc-msa",
-          "name": "Master Services Agreement",
-          "type": "MSA",
-          "status": "signed",
-          "signedBy": "Dana Whitlock",
-          "signedDate": "2026-06-15",
-          "fileName": "Harborline_MSA_Executed.pdf"
-        },
-        {
-          "id": "doc-nondisclosure",
-          "name": "Non-Disclosure Agreement",
-          "type": "NDA",
-          "status": "signed",
-          "signedBy": "Dana Whitlock",
-          "signedDate": "2026-06-12",
-          "fileName": "Harborline_NDA_Executed.pdf"
-        }
+        { "id": "doc-baa", "name": "Business Associate Agreement (BAA)", "type": "BAA", "status": "signed", "signedBy": "Dana Whitlock", "signedDate": "2026-06-20", "fileName": "Harborline_BAA_Executed.pdf" },
+        { "id": "doc-w9", "name": "W-9 Tax Form", "type": "W-9", "status": "signed", "signedBy": "Dana Whitlock", "signedDate": "2026-06-18", "fileName": "Harborline_W9.pdf" },
+        { "id": "doc-msa", "name": "Master Services Agreement", "type": "MSA", "status": "signed", "signedBy": "Dana Whitlock", "signedDate": "2026-06-15", "fileName": "Harborline_MSA_Executed.pdf" },
+        { "id": "doc-nondisclosure", "name": "Non-Disclosure Agreement", "type": "NDA", "status": "signed", "signedBy": "Dana Whitlock", "signedDate": "2026-06-12", "fileName": "Harborline_NDA_Executed.pdf" }
       ]
-    }
-  ],
-  "billingInvoices": [
-    {
-      "id": "inv-2026-001",
-      "orgId": "org-harborline",
-      "invoiceNumber": "INV-2026-001",
-      "period": "Jul 1 – Jul 31, 2026",
-      "amountCents": 425000,
-      "status": "paid",
-      "issuedDate": "2026-07-01",
-      "paidDate": "2026-07-03",
-      "plan": "Professional",
-      "seats": 12,
-      "seatPriceCents": 3500,
-      "prorationCents": 500,
-      "taxCents": 0
-    },
-    {
-      "id": "inv-2026-002",
-      "orgId": "org-harborline",
-      "invoiceNumber": "INV-2026-002",
-      "period": "Aug 1 – Aug 31, 2026",
-      "amountCents": 42000,
-      "status": "due",
-      "dueDate": "2026-08-01",
-      "issuedDate": "2026-07-15",
-      "plan": "Professional",
-      "seats": 12,
-      "seatPriceCents": 3500,
-      "prorationCents": 0,
-      "taxCents": 0
-    },
-    {
-      "id": "inv-2026-003",
-      "orgId": "org-harborline",
-      "invoiceNumber": "INV-2026-003",
-      "period": "Jun 1 – Jun 30, 2026",
-      "amountCents": 385000,
-      "status": "paid",
-      "issuedDate": "2026-06-01",
-      "paidDate": "2026-06-03",
-      "plan": "Professional",
-      "seats": 11,
-      "seatPriceCents": 3500,
-      "prorationCents": 0,
-      "taxCents": 0
     }
   ],
   "billingPlan": {
@@ -367,293 +76,456 @@
     "currentPeriodStart": "2026-07-01",
     "currentPeriodEnd": "2026-07-31"
   },
+  "billingInvoices": [
+    { "id": "inv-2026-001", "orgId": "org-harborline", "invoiceNumber": "INV-2026-001", "period": "Jul 1 – Jul 31, 2026", "amountCents": 425000, "status": "paid", "issuedDate": "2026-07-01", "paidDate": "2026-07-03", "plan": "Professional", "seats": 12, "seatPriceCents": 3500, "prorationCents": 500, "taxCents": 0 },
+    { "id": "inv-2026-002", "orgId": "org-harborline", "invoiceNumber": "INV-2026-002", "period": "Aug 1 – Aug 31, 2026", "amountCents": 42000, "status": "due", "dueDate": "2026-08-01", "issuedDate": "2026-07-15", "plan": "Professional", "seats": 12, "seatPriceCents": 3500, "prorationCents": 0, "taxCents": 0 },
+    { "id": "inv-2026-003", "orgId": "org-harborline", "invoiceNumber": "INV-2026-003", "period": "Jun 1 – Jun 30, 2026", "amountCents": 385000, "status": "paid", "issuedDate": "2026-06-01", "paidDate": "2026-06-03", "plan": "Professional", "seats": 11, "seatPriceCents": 3500, "prorationCents": 0, "taxCents": 0 }
+  ],
   "complianceRecords": [
     {
       "orgId": "org-harborline",
-      "hipaaTraining": {
-        "totalStaff": 12,
-        "completedStaff": 11,
-        "dueDate": "2026-09-01",
-        "lastUpdated": "2026-07-10"
-      },
+      "hipaaTraining": { "totalStaff": 12, "completedStaff": 11, "dueDate": "2026-09-01", "lastUpdated": "2026-07-10" },
       "baaAgreements": [
-        {
-          "id": "baa-001",
-          "vendorName": "Moonaria (EMR Platform)",
-          "status": "active",
-          "signedDate": "2026-06-20",
-          "expiryDate": "2027-06-20",
-          "fileName": "Moonaria_BAA_Executed.pdf"
-        },
-        {
-          "id": "baa-002",
-          "vendorName": "Twilio (SMS Reminders)",
-          "status": "active",
-          "signedDate": "2026-06-22",
-          "expiryDate": "2027-06-22",
-          "fileName": "Twilio_BAA_Executed.pdf"
-        },
-        {
-          "id": "baa-003",
-          "vendorName": "Change Healthcare (Clearinghouse)",
-          "status": "active",
-          "signedDate": "2026-06-25",
-          "expiryDate": "2027-06-25",
-          "fileName": "ChangeHealthcare_BAA_Executed.pdf"
-        },
-        {
-          "id": "baa-004",
-          "vendorName": "Google Workspace (Email)",
-          "status": "expiring",
-          "signedDate": "2025-08-01",
-          "expiryDate": "2026-08-01",
-          "fileName": "Google_BAA.pdf"
-        }
+        { "id": "baa-001", "vendorName": "Moonaria (EMR Platform)", "status": "active", "signedDate": "2026-06-20", "expiryDate": "2027-06-20", "fileName": "Moonaria_BAA_Executed.pdf" },
+        { "id": "baa-002", "vendorName": "Twilio (SMS Reminders)", "status": "active", "signedDate": "2026-06-22", "expiryDate": "2027-06-22", "fileName": "Twilio_BAA_Executed.pdf" },
+        { "id": "baa-003", "vendorName": "Change Healthcare (Clearinghouse)", "status": "active", "signedDate": "2026-06-25", "expiryDate": "2027-06-25", "fileName": "ChangeHealthcare_BAA_Executed.pdf" },
+        { "id": "baa-004", "vendorName": "Google Workspace (Email)", "status": "expiring", "signedDate": "2025-08-01", "expiryDate": "2026-08-01", "fileName": "Google_BAA.pdf" }
       ],
-      "auditLogs": {
-        "retentionPeriod": "7 years",
-        "status": "compliant",
-        "lastReviewDate": "2026-07-01"
-      },
+      "auditLogs": { "retentionPeriod": "7 years", "status": "compliant", "lastReviewDate": "2026-07-01" },
       "incidents": [
-        {
-          "id": "inc-001",
-          "title": "Unauthorized access attempt — resolved",
-          "severity": "low",
-          "status": "resolved",
-          "reportedDate": "2026-06-28",
-          "resolvedDate": "2026-07-02",
-          "description": "Failed login attempts from unknown IP detected and blocked. No PHI accessed."
-        }
+        { "id": "inc-001", "title": "Unauthorized access attempt — resolved", "severity": "low", "status": "resolved", "reportedDate": "2026-06-28", "resolvedDate": "2026-07-02", "description": "Failed login attempts from unknown IP detected and blocked. No PHI accessed." }
       ],
       "policies": [
-        {
-          "id": "pol-001",
-          "name": "HIPAA Privacy Policy",
-          "status": "active",
-          "lastReviewed": "2026-06-15",
-          "nextReviewDue": "2027-06-15"
-        },
-        {
-          "id": "pol-002",
-          "name": "Data Retention Policy",
-          "status": "active",
-          "lastReviewed": "2026-06-15",
-          "nextReviewDue": "2027-06-15"
-        },
-        {
-          "id": "pol-003",
-          "name": "Incident Response Plan",
-          "status": "active",
-          "lastReviewed": "2026-05-20",
-          "nextReviewDue": "2027-05-20"
-        },
-        {
-          "id": "pol-004",
-          "name": "42 CFR Part 2 Compliance Policy",
-          "status": "review-due",
-          "lastReviewed": "2025-07-01",
-          "nextReviewDue": "2026-07-01"
-        }
+        { "id": "pol-001", "name": "HIPAA Privacy Policy", "status": "active", "lastReviewed": "2026-06-15", "nextReviewDue": "2027-06-15" },
+        { "id": "pol-002", "name": "Data Retention Policy", "status": "active", "lastReviewed": "2026-06-15", "nextReviewDue": "2027-06-15" },
+        { "id": "pol-003", "name": "Incident Response Plan", "status": "active", "lastReviewed": "2026-05-20", "nextReviewDue": "2027-05-20" },
+        { "id": "pol-004", "name": "42 CFR Part 2 Compliance Policy", "status": "review-due", "lastReviewed": "2025-07-01", "nextReviewDue": "2026-07-01" }
       ]
     }
   ],
   "reportTemplates": [
-    {
-      "id": "rpt-001",
-      "name": "Monthly Utilization Report",
-      "description": "Provider-level session counts, modality breakdown, and no-show rates",
-      "category": "Operational",
-      "schedule": "monthly",
-      "lastRunDate": "2026-07-10",
-      "nextRunDate": "2026-08-10",
-      "format": "PDF",
-      "status": "scheduled"
-    },
-    {
-      "id": "rpt-002",
-      "name": "Revenue by Payer",
-      "description": "Claim revenue broken down by insurance payer with denial rates",
-      "category": "Financial",
-      "schedule": "on-demand",
-      "lastRunDate": "2026-07-11",
-      "nextRunDate": null,
-      "format": "CSV",
-      "status": "available"
-    },
-    {
-      "id": "rpt-003",
-      "name": "Clinical Outcomes Summary",
-      "description": "PHQ-9, GAD-7, and outcome measure trends across active patients",
-      "category": "Clinical",
-      "schedule": "monthly",
-      "lastRunDate": "2026-07-05",
-      "nextRunDate": "2026-08-05",
-      "format": "PDF",
-      "status": "scheduled"
-    },
-    {
-      "id": "rpt-004",
-      "name": "Claim Denial Analysis",
-      "description": "Denied claims grouped by payer, denial code, and provider",
-      "category": "Financial",
-      "schedule": "on-demand",
-      "lastRunDate": "2026-07-12",
-      "nextRunDate": null,
-      "format": "CSV",
-      "status": "available"
-    },
-    {
-      "id": "rpt-005",
-      "name": "Credentialing Status Report",
-      "description": "Provider credentialing completion and payer panel status",
-      "category": "Operational",
-      "schedule": "weekly",
-      "lastRunDate": "2026-07-08",
-      "nextRunDate": "2026-07-15",
-      "format": "PDF",
-      "status": "scheduled"
-    },
-    {
-      "id": "rpt-006",
-      "name": "Supervision Hours Log",
-      "description": "Associate supervision hours tracked against state board requirements",
-      "category": "Clinical",
-      "schedule": "monthly",
-      "lastRunDate": "2026-07-01",
-      "nextRunDate": "2026-08-01",
-      "format": "PDF",
-      "status": "scheduled"
-    },
-    {
-      "id": "rpt-007",
-      "name": "Patient Satisfaction Survey",
-      "description": "Aggregated patient experience scores and feedback themes",
-      "category": "Operational",
-      "schedule": "quarterly",
-      "lastRunDate": "2026-06-30",
-      "nextRunDate": "2026-09-30",
-      "format": "PDF",
-      "status": "scheduled"
-    },
-    {
-      "id": "rpt-008",
-      "name": "Payer Mix Analysis",
-      "description": "Patient distribution across payers with revenue attribution",
-      "category": "Financial",
-      "schedule": "on-demand",
-      "lastRunDate": "2026-07-09",
-      "nextRunDate": null,
-      "format": "CSV",
-      "status": "available"
-    }
+    { "id": "rpt-001", "name": "Monthly Utilization Report", "description": "Provider-level session counts, modality breakdown, and no-show rates", "category": "Operational", "schedule": "monthly", "lastRunDate": "2026-07-10", "nextRunDate": "2026-08-10", "format": "PDF", "status": "scheduled" },
+    { "id": "rpt-002", "name": "Revenue by Payer", "description": "Claim revenue broken down by insurance payer with denial rates", "category": "Financial", "schedule": "on-demand", "lastRunDate": "2026-07-11", "nextRunDate": null, "format": "CSV", "status": "available" },
+    { "id": "rpt-003", "name": "Clinical Outcomes Summary", "description": "PHQ-9, GAD-7, and outcome measure trends across active patients", "category": "Clinical", "schedule": "monthly", "lastRunDate": "2026-07-05", "nextRunDate": "2026-08-05", "format": "PDF", "status": "scheduled" },
+    { "id": "rpt-004", "name": "Claim Denial Analysis", "description": "Denied claims grouped by payer, denial code, and provider", "category": "Financial", "schedule": "on-demand", "lastRunDate": "2026-07-12", "nextRunDate": null, "format": "CSV", "status": "available" },
+    { "id": "rpt-005", "name": "Credentialing Status Report", "description": "Provider credentialing completion and payer panel status", "category": "Operational", "schedule": "weekly", "lastRunDate": "2026-07-08", "nextRunDate": "2026-07-15", "format": "PDF", "status": "scheduled" },
+    { "id": "rpt-006", "name": "Supervision Hours Log", "description": "Associate supervision hours tracked against state board requirements", "category": "Clinical", "schedule": "monthly", "lastRunDate": "2026-07-01", "nextRunDate": "2026-08-01", "format": "PDF", "status": "scheduled" },
+    { "id": "rpt-007", "name": "Patient Satisfaction Survey", "description": "Aggregated patient experience scores and feedback themes", "category": "Operational", "schedule": "quarterly", "lastRunDate": "2026-06-30", "nextRunDate": "2026-09-30", "format": "PDF", "status": "scheduled" },
+    { "id": "rpt-008", "name": "Payer Mix Analysis", "description": "Patient distribution across payers with revenue attribution", "category": "Financial", "schedule": "on-demand", "lastRunDate": "2026-07-09", "nextRunDate": null, "format": "CSV", "status": "available" }
   ],
   "intakeFormTemplates": [
-    {
-      "id": "form-demo",
-      "name": "Demographic & Contact Information",
-      "description": "Patient name, DOB, address, phone, email, emergency contact",
-      "category": "demographics",
-      "required": true,
-      "estimatedMinutes": 5
-    },
-    {
-      "id": "form-hipaa",
-      "name": "HIPAA Privacy Acknowledgment",
-      "description": "Patient acknowledges receipt of HIPAA Notice of Privacy Practices",
-      "category": "consent",
-      "required": true,
-      "estimatedMinutes": 3
-    },
-    {
-      "id": "form-medical",
-      "name": "Medical & Psychiatric History",
-      "description": "Current medications, past diagnoses, family history, allergies",
-      "category": "clinical",
-      "required": true,
-      "estimatedMinutes": 10
-    },
-    {
-      "id": "form-consent",
-      "name": "Consent to Treatment",
-      "description": "Informed consent for behavioral health treatment and telehealth",
-      "category": "consent",
-      "required": true,
-      "estimatedMinutes": 5
-    },
-    {
-      "id": "form-roi",
-      "name": "Release of Information",
-      "description": "Authorization to share records with specified providers or payers",
-      "category": "consent",
-      "required": false,
-      "estimatedMinutes": 3
-    },
-    {
-      "id": "form-financial",
-      "name": "Financial Responsibility Agreement",
-      "description": "Patient agrees to pay copays, deductibles, and non-covered services",
-      "category": "financial",
-      "required": true,
-      "estimatedMinutes": 3
-    }
+    { "id": "form-demo", "name": "Demographic & Contact Information", "description": "Patient name, DOB, address, phone, email, emergency contact", "category": "demographics", "required": true, "estimatedMinutes": 5 },
+    { "id": "form-hipaa", "name": "HIPAA Privacy Acknowledgment", "description": "Patient acknowledges receipt of HIPAA Notice of Privacy Practices", "category": "consent", "required": true, "estimatedMinutes": 3 },
+    { "id": "form-medical", "name": "Medical & Psychiatric History", "description": "Current medications, past diagnoses, family history, allergies", "category": "clinical", "required": true, "estimatedMinutes": 10 },
+    { "id": "form-consent", "name": "Consent to Treatment", "description": "Informed consent for behavioral health treatment and telehealth", "category": "consent", "required": true, "estimatedMinutes": 5 },
+    { "id": "form-roi", "name": "Release of Information", "description": "Authorization to share records with specified providers or payers", "category": "consent", "required": false, "estimatedMinutes": 3 },
+    { "id": "form-financial", "name": "Financial Responsibility Agreement", "description": "Patient agrees to pay copays, deductibles, and non-covered services", "category": "financial", "required": true, "estimatedMinutes": 3 }
   ],
   "eligibilityChecks": [
+    { "id": "elig-001", "patientId": "pt-001", "payerId": "payer-aetna", "payerName": "Aetna", "memberId": "AET-12-3456", "status": "active", "copayCents": 0, "deductibleMetCents": 150000, "deductibleTotalCents": 150000, "visitsRemaining": 20, "checkedAt": "2026-07-10T10:00:00Z", "result": "verified" },
+    { "id": "elig-002", "patientId": "pt-002", "payerId": "payer-blueshield", "payerName": "Blue Shield of California", "memberId": "BSC-778821", "status": "active", "copayCents": 3000, "deductibleMetCents": 50000, "deductibleTotalCents": 200000, "visitsRemaining": 12, "checkedAt": "2026-07-10T10:05:00Z", "result": "verified" },
+    { "id": "elig-003", "patientId": "pt-003", "payerId": "payer-cigna", "payerName": "Cigna", "memberId": "CGN-902340", "status": "active", "copayCents": 4500, "deductibleMetCents": 0, "deductibleTotalCents": 300000, "visitsRemaining": 8, "checkedAt": "2026-07-10T10:10:00Z", "result": "verified" },
+    { "id": "elig-004", "patientId": "pt-005", "payerId": "payer-aetna", "payerName": "Aetna", "memberId": "AET-44-8892", "status": "inactive", "copayCents": 0, "deductibleMetCents": 0, "deductibleTotalCents": 0, "visitsRemaining": 0, "checkedAt": "2026-07-10T10:15:00Z", "result": "action-needed" }
+  ],
+  "clinicalNotes": [
     {
-      "id": "elig-001",
+      "id": "note-001",
       "patientId": "pt-001",
-      "payerId": "payer-aetna",
-      "payerName": "Aetna",
-      "memberId": "AET-12-3456",
-      "status": "active",
-      "copayCents": 0,
-      "deductibleMetCents": 150000,
-      "deductibleTotalCents": 150000,
-      "visitsRemaining": 20,
-      "checkedAt": "2026-07-10T10:00:00Z",
-      "result": "verified"
+      "patientName": "Jordan Avery",
+      "providerId": "user-003",
+      "providerName": "Dr. Priya Nair",
+      "sessionDate": "2026-07-12",
+      "sessionType": "Individual Therapy — 50 min",
+      "modality": "telehealth",
+      "status": "signed",
+      "soap": {
+        "subjective": "Patient reports decreased anxiety this week. States CBT techniques learned in prior sessions have been helpful for managing work-related stress. Sleeping 7 hours per night, improved from 5. Denies suicidal ideation. Reports one panic attack on Tuesday at work but was able to use grounding techniques to resolve it within 10 minutes.",
+        "objective": "Mood: euthymic. Affect: full range, appropriate. Speech: normal rate and rhythm. Thought process: linear and goal-directed. No perceptual disturbances. Cognition: intact. Insight: good. Judgment: fair. GAD-7 score: 8 (mild), down from 12 last session. PHQ-9 score: 5 (minimal), down from 9.",
+        "assessment": "Patient continues to show improvement in generalized anxiety disorder symptoms. GAD-7 decreased from 12 to 8 over 4 sessions. PHQ-9 remains in minimal range. Patient is utilizing CBT skills effectively, particularly grounding techniques and cognitive restructuring. No safety concerns identified.",
+        "plan": "Continue individual CBT weekly. Introduce exposure hierarchy for work-related anxiety triggers next session. Patient to continue practicing diaphragmatic breathing 2x daily. Reassess GAD-7 and PHQ-9 next session. Next appointment scheduled for 2026-07-19 at 2:00 PM via telehealth."
+      },
+      "transcript": "Provider: How has your week been since our last session?\nPatient: Pretty good actually. I had one rough day at work on Tuesday where I felt a panic attack coming on, but I used the grounding technique you taught me — the 5-4-3-2-1 thing — and it actually worked. It took about 10 minutes but I got through it without having to leave the office.\nProvider: That's excellent progress. You used the skill in the moment and it worked. How did you feel afterward?\nPatient: Relieved, honestly. A year ago I would have gone home sick. This time I stayed and finished my day. I also slept better the rest of the week — like 7 hours a night instead of the usual 5.\nProvider: Let's talk about what triggered the panic attack on Tuesday. Can you walk me through what was happening at work?\nPatient: We had a big deadline and my manager kept checking in. I started feeling the tightness in my chest, the racing thoughts. But I caught it early this time.\nProvider: That early awareness is key. For next week, I'd like to start building an exposure hierarchy — a ranked list of work situations that trigger anxiety. We'll work through them gradually. Does that sound okay?\nPatient: Yeah, that sounds good. I feel like I'm actually making progress for once."
     },
     {
-      "id": "elig-002",
+      "id": "note-002",
+      "patientId": "pt-001",
+      "patientName": "Jordan Avery",
+      "providerId": "user-003",
+      "providerName": "Dr. Priya Nair",
+      "sessionDate": "2026-07-05",
+      "sessionType": "Individual Therapy — 50 min",
+      "modality": "telehealth",
+      "status": "signed",
+      "soap": {
+        "subjective": "Patient reports ongoing work-related anxiety but notes slight improvement in sleep quality. States he has been practicing breathing exercises 3-4 times per week. Reports increased irritability with coworkers. Denies panic attacks since last session. Continues to deny suicidal ideation.",
+        "objective": "Mood: mildly anxious. Affect: appropriate, slightly constricted. Speech: normal. Thought process: linear. No perceptual disturbances. Insight: good. Judgment: fair. GAD-7 score: 12 (moderate). PHQ-9 score: 9 (mild).",
+        "assessment": "Patient with GAD showing partial response to CBT intervention. Sleep improvement is positive prognostic indicator. Irritability may be related to accumulated work stress and should be monitored. No safety concerns.",
+        "plan": "Continue CBT weekly. Review cognitive distortions worksheet. Introduce grounding technique (5-4-3-2-1) for in-the-moment anxiety management. Patient to continue breathing exercises. Next appointment 2026-07-12."
+      },
+      "transcript": "Provider: Welcome back, Jordan. How have things been since our last session?\nPatient: Mixed, I guess. I've been doing the breathing exercises like you suggested — maybe 3 or 4 times this week. I think it's helping with sleep at least. I'm getting maybe 5-6 hours now instead of 4.\nProvider: That's an improvement. What about the anxiety during the day?\nPatient: Still there. Work has been really stressful. I've been more irritable with my coworkers, snapping at people over small things. I feel bad about it after.\nProvider: Let's look at that irritability. When you snapped at someone, what was the thought right before?\nPatient: Usually something like 'they're going to think I can't handle this project.' It's always about being judged.\nProvider: That's a cognitive distortion — mind reading. We've talked about this. Today I want to teach you a grounding technique you can use in the moment when you feel the anxiety spiking."
+    },
+    {
+      "id": "note-003",
       "patientId": "pt-002",
-      "payerId": "payer-blueshield",
-      "payerName": "Blue Shield of California",
-      "memberId": "BSC-778821",
-      "status": "active",
-      "copayCents": 3000,
-      "deductibleMetCents": 50000,
-      "deductibleTotalCents": 200000,
-      "visitsRemaining": 12,
-      "checkedAt": "2026-07-10T10:05:00Z",
-      "result": "verified"
+      "patientName": "Maria Sato",
+      "providerId": "user-009",
+      "providerName": "Maya Castellanos",
+      "sessionDate": "2026-07-11",
+      "sessionType": "Individual Therapy — 50 min",
+      "modality": "in-person",
+      "status": "signed",
+      "soap": {
+        "subjective": "Patient presents for 6th session of trauma-focused CBT. Reports decreased frequency of intrusive memories (from daily to 2-3x/week). States she was able to attend a social gathering over the weekend for the first time in months. Reports continued difficulty with sleep onset, approximately 45 minutes to fall asleep. Denies nightmares since starting prazosin. Denies suicidal ideation.",
+        "objective": "Mood: mildly depressed. Affect: appropriate, some restriction when discussing trauma. Speech: normal. Thought process: linear. No active perceptual disturbances. Insight: good. Judgment: good. PCL-5 score: 31, down from 42 at intake. PHQ-9: 10 (mild-moderate).",
+        "assessment": "Patient with PTSD showing positive response to trauma-focused CBT and adjunctive prazosin. PCL-5 decreased 11 points over 6 sessions. Social functioning improving. Sleep onset difficulty persists but nightmares have resolved. No safety concerns.",
+        "plan": "Continue trauma-focused CBT. Begin imaginal exposure next session. Coordinate with Dr. Lee re: prazosin efficacy at next medication management appointment. Patient to continue sleep hygiene practices. Next appointment 2026-07-18."
+      },
+      "transcript": "Provider: Hi Maria, how are you doing today?\nPatient: Better than last week, I think. I actually went to a friend's barbecue on Saturday. I haven't done anything like that in months.\nProvider: That's a big step. How did it feel before, during, and after?\nPatient: Before I almost cancelled. My heart was racing. But I went and actually stayed for about two hours. During was okay — I stayed near my friend most of the time. After I was exhausted but also... proud? Like I did something normal.\nProvider: That's wonderful progress. How about the intrusive memories?\nPatient: Less frequent. Maybe 2 or 3 times this week instead of every day. The nightmares have stopped since I started the prazosin. But I'm still taking forever to fall asleep.\nProvider: Let's talk about sleep. And next session I'd like to start something called imaginal exposure. It's a technique where we revisit the traumatic memory in a controlled way to help process it."
     },
     {
-      "id": "elig-003",
+      "id": "note-004",
       "patientId": "pt-003",
-      "payerId": "payer-cigna",
-      "payerName": "Cigna",
-      "memberId": "CGN-902340",
-      "status": "active",
-      "copayCents": 4500,
-      "deductibleMetCents": 0,
-      "deductibleTotalCents": 300000,
-      "visitsRemaining": 8,
-      "checkedAt": "2026-07-10T10:10:00Z",
-      "result": "verified"
+      "patientName": "Devon Park",
+      "providerId": "user-004",
+      "providerName": "Dr. Marcus Lee",
+      "sessionDate": "2026-07-10",
+      "sessionType": "Medication Management — 30 min",
+      "modality": "telehealth",
+      "status": "signed",
+      "soap": {
+        "subjective": "Patient returns for medication follow-up. Reports sertraline 50mg has reduced anxiety symptoms approximately 40%. States side effects (mild nausea, initial insomnia) have resolved after 2 weeks. Reports improved focus at work. Denies sexual side effects. Denies suicidal ideation.",
+        "objective": "Mood: euthymic. Affect: full range, appropriate. Speech: normal rate. Thought process: linear and organized. No perceptual disturbances. GAD-7: 7 (mild), down from 14 at intake. PHQ-9: 4 (minimal). Vitals: BP 118/76, HR 72, weight stable.",
+        "assessment": "Patient with generalized anxiety disorder showing good partial response to sertraline 50mg after 4 weeks. Side effects have resolved. 40% symptom reduction is encouraging but not yet full remission. No safety concerns. No contraindications to dose increase.",
+        "plan": "Increase sertraline to 100mg daily. Reassess in 4 weeks. Continue monitoring for sexual side effects at higher dose. Patient to call office if any new side effects. Labs: repeat CMP in 3 months. Next appointment 2026-08-07."
+      },
+      "transcript": "Provider: Hi Devon, thanks for coming in. How have you been feeling on the sertraline?\nPatient: Definitely better. The anxiety isn't gone but it's maybe 40% less. I can actually focus at work now without my mind racing all the time.\nProvider: Good. Any side effects?\nPatient: The first two weeks I had some nausea and trouble sleeping, but that's gone now. No other issues.\nProvider: Any changes in sexual function?\nPatient: No, nothing like that.\nProvider: Your GAD-7 score today is 7, down from 14 when we started. That's good progress but I'd like to get you to full remission. I'm going to increase the sertraline to 100mg. The main thing to watch for at the higher dose is any sexual side effects — let me know right away if you notice anything."
     },
     {
-      "id": "elig-004",
-      "patientId": "pt-006",
-      "payerId": "payer-aetna",
-      "payerName": "Aetna",
-      "memberId": "AET-44-8892",
-      "status": "inactive",
-      "copayCents": 0,
-      "deductibleMetCents": 0,
-      "deductibleTotalCents": 0,
-      "visitsRemaining": 0,
-      "checkedAt": "2026-07-10T10:15:00Z",
-      "result": "action-needed"
+      "id": "note-005",
+      "patientId": "pt-004",
+      "patientName": "Emma Rios",
+      "providerId": "user-003",
+      "providerName": "Dr. Priya Nair",
+      "sessionDate": "2026-07-09",
+      "sessionType": "Family Therapy — 50 min",
+      "modality": "in-person",
+      "status": "draft",
+      "soap": {
+        "subjective": "Session conducted with Emma (14) and mother Lucia. Lucia reports Emma has been more withdrawn at home, spending more time in her room. Emma states she 'doesn't want to talk about it.' Emma denies self-harm but reports feeling 'sad a lot.' Lucia reports Emma's grades have dropped from B's to C's this semester.",
+        "objective": "Mood: depressed. Affect: constricted, minimal eye contact initially, warmed up during session. Speech: soft, low volume. Thought process: linear. No psychotic features. Appears younger than stated age. Engaged well with drawing activity during session.",
+        "assessment": "14-year-old female presenting with depressive symptoms and social withdrawal. Academic decline noted by parent. Family dynamics may be contributing — parents separated 6 months ago. Emma appears to respond well to non-verbal therapeutic activities. No acute safety concerns but requires ongoing monitoring given age and presentation.",
+        "plan": "Continue family therapy biweekly. Add individual play therapy component for Emma. Provide Lucia with parent guidance resources. Coordinate with school counselor re: academic support. Reassess PHQ-A adolescent next session. Next appointment 2026-07-23."
+      },
+      "transcript": "Provider: Hi Emma, thank you for coming in today with your mom. I have some art supplies here — would you like to draw while we talk?\nEmma: (nods, takes markers)\nLucia: She's been in her room so much. I barely see her anymore. Her teacher emailed me that she's not turning in homework.\nProvider: Emma, is it okay if we talk about what's been happening at school?\nEmma: (drawing, shrugs) I guess.\nProvider: You mentioned last time that you've been feeling sad a lot. Is that still true?\nEmma: (nods, continues drawing)\nProvider: Can you tell me what the sad feels like? Is it like a heavy feeling, or more like emptiness?\nEmma: Like... empty. Like I don't want to do anything.\nLucia: (tearing up) I just want my daughter back."
+    },
+    {
+      "id": "note-006",
+      "patientId": "pt-001",
+      "patientName": "Jordan Avery",
+      "providerId": "user-003",
+      "providerName": "Dr. Priya Nair",
+      "sessionDate": "2026-06-28",
+      "sessionType": "Individual Therapy — 50 min",
+      "modality": "telehealth",
+      "status": "signed",
+      "soap": {
+        "subjective": "Patient presents for 3rd session. Reports continued work stress with new project deadline. Sleep remains poor at 5 hours/night. States breathing exercises have been helpful 'in the moment' but he forgets to use them regularly. Denies suicidal ideation. Reports one panic attack this week.",
+        "objective": "Mood: anxious. Affect: appropriate but tense. Speech: slightly rapid. Thought process: linear. No perceptual disturbances. GAD-7: 12 (moderate). PHQ-9: 9 (mild).",
+        "assessment": "Patient with GAD in early stages of CBT. Partial engagement with homework (breathing exercises). Symptoms remain in moderate range. No safety concerns. Ready for introduction of cognitive restructuring.",
+        "plan": "Continue CBT weekly. Introduce cognitive distortions identification worksheet. Patient to set phone reminders for breathing exercises. Discuss work boundary setting. Next appointment 2026-07-05."
+      },
+      "transcript": "Provider: How has the breathing been going?\nPatient: When I remember to do it, it helps. But I forget. I'll do it maybe twice a week instead of every day.\nProvider: Let's problem-solve that. What if you set a phone reminder?\nPatient: That could work. I just get so caught up at work that everything else disappears.\nProvider: That's actually one of the things we should look at — the way work takes over everything. Today I want to introduce the idea of cognitive distortions. These are patterns of thinking that fuel anxiety."
+    },
+    {
+      "id": "note-007",
+      "patientId": "pt-002",
+      "patientName": "Maria Sato",
+      "providerId": "user-009",
+      "providerName": "Maya Castellanos",
+      "sessionDate": "2026-07-04",
+      "sessionType": "Individual Therapy — 50 min",
+      "modality": "in-person",
+      "status": "signed",
+      "soap": {
+        "subjective": "Patient presents for 5th session. Reports increased anxiety related to upcoming holiday weekend. States she has been avoiding driving on the highway since the accident. Reports sleep is slightly improved with prazosin — falling asleep in 30 min instead of 60. Denies nightmares. Denies suicidal ideation.",
+        "objective": "Mood: anxious. Affect: appropriate. Speech: normal. Thought process: linear. Startle response present when loud noise occurred in hallway. PCL-5: 35, down from 42. PHQ-9: 11.",
+        "assessment": "Patient with PTSD secondary to MVA. Avoidance behaviors (highway driving) are maintaining symptoms. Prazosin helping with sleep onset. Startle response remains heightened. No safety concerns.",
+        "plan": "Continue CBT trauma-focused. Psychoeducation on avoidance cycle. Encourage gradual exposure to driving (start as passenger on short trips). Continue prazosin. Next appointment 2026-07-11."
+      },
+      "transcript": "Provider: You mentioned the holiday weekend is coming up. How are you feeling about that?\nPatient: Anxious. There will be a lot of people and I've been avoiding crowds.\nProvider: What do you think would happen if you went to a gathering?\nPatient: I'd have a panic attack. Or I'd freeze and embarrass myself.\nProvider: That's the avoidance talking. What we know about PTSD is that avoidance actually makes the anxiety stronger. Let's talk about taking a small step."
     }
+  ],
+  "prescriptions": [
+    {
+      "id": "rx-001",
+      "patientId": "pt-003",
+      "patientName": "Devon Park",
+      "providerId": "user-004",
+      "providerName": "Dr. Marcus Lee",
+      "medication": "Sertraline",
+      "strength": "50 mg",
+      "form": "tablet",
+      "sig": "Take 1 tablet by mouth daily",
+      "quantity": 30,
+      "refills": 3,
+      "pharmacy": "Walgreens #4821, 1200 Broadway, Oakland, CA",
+      "status": "active",
+      "prescribedDate": "2026-06-12",
+      "ndc": "00677-1114-01",
+      "notes": "Start with 50mg for 4 weeks, then increase to 100mg if tolerated."
+    },
+    {
+      "id": "rx-002",
+      "patientId": "pt-003",
+      "patientName": "Devon Park",
+      "providerId": "user-004",
+      "providerName": "Dr. Marcus Lee",
+      "medication": "Sertraline",
+      "strength": "100 mg",
+      "form": "tablet",
+      "sig": "Take 1 tablet by mouth daily",
+      "quantity": 30,
+      "refills": 3,
+      "pharmacy": "Walgreens #4821, 1200 Broadway, Oakland, CA",
+      "status": "pending",
+      "prescribedDate": "2026-07-10",
+      "ndc": "00677-1115-01",
+      "notes": "Increase from 50mg. Monitor for sexual side effects."
+    },
+    {
+      "id": "rx-003",
+      "patientId": "pt-002",
+      "patientName": "Maria Sato",
+      "providerId": "user-004",
+      "providerName": "Dr. Marcus Lee",
+      "medication": "Prazosin",
+      "strength": "2 mg",
+      "form": "capsule",
+      "sig": "Take 1 capsule by mouth at bedtime",
+      "quantity": 30,
+      "refills": 2,
+      "pharmacy": "CVS #3301, 2150 Shattuck Ave, Berkeley, CA",
+      "status": "active",
+      "prescribedDate": "2026-06-20",
+      "ndc": "00093-7170-01",
+      "notes": "For PTSD-related nightmares. May increase to 3mg if needed."
+    },
+    {
+      "id": "rx-004",
+      "patientId": "pt-002",
+      "patientName": "Maria Sato",
+      "providerId": "user-004",
+      "providerName": "Dr. Marcus Lee",
+      "medication": "Escitalopram",
+      "strength": "10 mg",
+      "form": "tablet",
+      "sig": "Take 1 tablet by mouth daily",
+      "quantity": 30,
+      "refills": 3,
+      "pharmacy": "CVS #3301, 2150 Shattuck Ave, Berkeley, CA",
+      "status": "active",
+      "prescribedDate": "2026-06-15",
+      "ndc": "50458-0590-30",
+      "notes": "For comorbid depression. Assess response at 4 weeks."
+    },
+    {
+      "id": "rx-005",
+      "patientId": "pt-006",
+      "patientName": "Aaliyah Johnson",
+      "providerId": "user-004",
+      "providerName": "Dr. Marcus Lee",
+      "medication": "Bupropion XL",
+      "strength": "150 mg",
+      "form": "tablet, extended release",
+      "sig": "Take 1 tablet by mouth daily in the morning",
+      "quantity": 30,
+      "refills": 3,
+      "pharmacy": "Walgreens #4821, 1200 Broadway, Oakland, CA",
+      "status": "active",
+      "prescribedDate": "2026-07-01",
+      "ndc": "00310-0101-30",
+      "notes": "For MDD with anhedonia. Avoid evening dosing due to insomnia risk."
+    }
+  ],
+  "treatmentPlans": [
+    {
+      "id": "tp-001",
+      "patientId": "pt-001",
+      "patientName": "Jordan Avery",
+      "providerId": "user-003",
+      "providerName": "Dr. Priya Nair",
+      "diagnosis": "F41.1 — Generalized Anxiety Disorder",
+      "diagnosisDescription": "Excessive anxiety and worry occurring more days than not for at least 6 months, about a number of events or activities.",
+      "startDate": "2026-06-14",
+      "reviewDate": "2026-09-14",
+      "status": "active",
+      "frequency": "Weekly individual therapy",
+      "modality": "Cognitive Behavioral Therapy (CBT)",
+      "goals": [
+        {
+          "id": "g1",
+          "description": "Reduce GAD-7 score from 14 (moderate) to below 5 (minimal) within 12 weeks",
+          "progress": "In progress — GAD-7 decreased from 14 to 8 over 4 weeks",
+          "targetDate": "2026-09-06",
+          "status": "in-progress"
+        },
+        {
+          "id": "g2",
+          "description": "Patient will identify and challenge cognitive distortions in real-time using a thought record, at least 3x per week",
+          "progress": "In progress — patient using thought records 1-2x per week",
+          "targetDate": "2026-08-03",
+          "status": "in-progress"
+        },
+        {
+          "id": "g3",
+          "description": "Patient will learn and apply 3 relaxation techniques (diaphragmatic breathing, progressive muscle relaxation, grounding) for daily use",
+          "progress": "Partially met — breathing exercises learned, grounding introduced, PMR not yet introduced",
+          "targetDate": "2026-07-26",
+          "status": "in-progress"
+        },
+        {
+          "id": "g4",
+          "description": "Patient will reduce work-related avoidance behaviors by setting boundaries (leaving work by 5 PM at least 4 days/week)",
+          "progress": "Not yet started — patient still working late most days",
+          "targetDate": "2026-08-17",
+          "status": "not-started"
+        }
+      ]
+    },
+    {
+      "id": "tp-002",
+      "patientId": "pt-002",
+      "patientName": "Maria Sato",
+      "providerId": "user-009",
+      "providerName": "Maya Castellanos",
+      "diagnosis": "F43.10 — Post-Traumatic Stress Disorder",
+      "diagnosisDescription": "Development of characteristic symptoms following exposure to a traumatic event. Patient was involved in a motor vehicle accident in March 2026.",
+      "startDate": "2026-06-05",
+      "reviewDate": "2026-09-05",
+      "status": "active",
+      "frequency": "Weekly individual therapy",
+      "modality": "Trauma-Focused CBT",
+      "goals": [
+        {
+          "id": "g1",
+          "description": "Reduce PCL-5 score from 42 (moderate-to-severe) to below 15 (subthreshold) within 16 weeks",
+          "progress": "In progress — PCL-5 decreased from 42 to 31 over 6 weeks",
+          "targetDate": "2026-09-25",
+          "status": "in-progress"
+        },
+        {
+          "id": "g2",
+          "description": "Patient will complete imaginal exposure protocol for MVA memory within 8 sessions",
+          "progress": "Not yet started — scheduled to begin next session",
+          "targetDate": "2026-08-29",
+          "status": "not-started"
+        },
+        {
+          "id": "g3",
+          "description": "Patient will resume driving on the highway independently within 12 weeks",
+          "progress": "In progress — patient has begun riding as passenger on short trips",
+          "targetDate": "2026-08-28",
+          "status": "in-progress"
+        },
+        {
+          "id": "g4",
+          "description": "Patient will attend at least 2 social events per month to reduce isolation",
+          "progress": "Partially met — attended 1 social event last weekend",
+          "targetDate": "2026-07-31",
+          "status": "in-progress"
+        }
+      ]
+    },
+    {
+      "id": "tp-003",
+      "patientId": "pt-003",
+      "patientName": "Devon Park",
+      "providerId": "user-004",
+      "providerName": "Dr. Marcus Lee",
+      "diagnosis": "F41.1 — Generalized Anxiety Disorder",
+      "diagnosisDescription": "Patient presenting with excessive worry, muscle tension, and sleep disturbance. Referred for medication management.",
+      "startDate": "2026-06-12",
+      "reviewDate": "2026-09-12",
+      "status": "active",
+      "frequency": "Monthly medication management",
+      "modality": "Pharmacotherapy (SSRI)",
+      "goals": [
+        {
+          "id": "g1",
+          "description": "Achieve full remission of anxiety symptoms (GAD-7 < 5) within 12 weeks of optimal pharmacotherapy",
+          "progress": "In progress — GAD-7 decreased from 14 to 7 over 4 weeks on sertraline 50mg",
+          "targetDate": "2026-09-04",
+          "status": "in-progress"
+        },
+        {
+          "id": "g2",
+          "description": "Tolerate sertraline 100mg without significant side effects",
+          "progress": "In progress — dose increased to 100mg on 2026-07-10, monitoring",
+          "targetDate": "2026-08-07",
+          "status": "in-progress"
+        },
+        {
+          "id": "g3",
+          "description": "Coordinate care with therapist for concurrent CBT",
+          "progress": "Met — referral placed and patient engaged in weekly CBT with Dr. Nair",
+          "targetDate": "2026-06-26",
+          "status": "met"
+        }
+      ]
+    },
+    {
+      "id": "tp-004",
+      "patientId": "pt-004",
+      "patientName": "Emma Rios",
+      "providerId": "user-003",
+      "providerName": "Dr. Priya Nair",
+      "diagnosis": "F32.2 — Major Depressive Disorder, Single Episode, Moderate",
+      "diagnosisDescription": "14-year-old female presenting with depressed mood, social withdrawal, and academic decline following parents' separation 6 months ago.",
+      "startDate": "2026-06-24",
+      "reviewDate": "2026-09-24",
+      "status": "active",
+      "frequency": "Biweekly family therapy + individual play therapy",
+      "modality": "Family Systems Therapy + Play Therapy",
+      "goals": [
+        {
+          "id": "g1",
+          "description": "Improve mood as measured by PHQ-A score decreasing from 12 to below 5 within 12 weeks",
+          "progress": "In progress — current PHQ-A is 10 after 3 sessions",
+          "targetDate": "2026-09-16",
+          "status": "in-progress"
+        },
+        {
+          "id": "g2",
+          "description": "Increase social engagement — Emma will participate in at least 1 peer activity per week",
+          "progress": "Not yet started — Emma remains socially withdrawn",
+          "targetDate": "2026-08-19",
+          "status": "not-started"
+        },
+        {
+          "id": "g3",
+          "description": "Improve academic performance — grades return to B or above in all classes",
+          "progress": "In progress — school counselor engaged, homework plan established",
+          "targetDate": "2026-10-01",
+          "status": "in-progress"
+        },
+        {
+          "id": "g4",
+          "description": "Improve communication with mother — Emma will initiate conversation with Lucia at least 3x per week",
+          "progress": "Partially met — Emma responds when Lucia initiates but rarely initiates herself",
+          "targetDate": "2026-08-05",
+          "status": "in-progress"
+        }
+      ]
+    }
+  ],
+  "tasks": [
+    { "id": "task-001", "title": "Review Jordan Avery's July 12 session note", "description": "Note is in draft status — needs co-signature for associate supervision", "patientId": "pt-001", "patientName": "Jordan Avery", "assignedTo": "user-003", "assignedToName": "Dr. Priya Nair", "dueDate": "2026-07-13", "priority": "high", "status": "pending", "category": "clinical" },
+    { "id": "task-002", "title": "Call Aetna re: Noah Williams eligibility", "description": "Eligibility check returned inactive. Need to verify coverage and collect updated insurance card.", "patientId": "pt-005", "patientName": "Noah Williams", "assignedTo": "user-011", "assignedToName": "Mike Torres", "dueDate": "2026-07-15", "priority": "high", "status": "pending", "category": "administrative" },
+    { "id": "task-003", "title": "Complete treatment plan for Emma Rios", "description": "Initial treatment plan needs to be finalized and signed before 4th session", "patientId": "pt-004", "patientName": "Emma Rios", "assignedTo": "user-003", "assignedToName": "Dr. Priya Nair", "dueDate": "2026-07-20", "priority": "medium", "status": "pending", "category": "clinical" },
+    { "id": "task-004", "title": "Send intake forms to new patient — Devon Park", "description": "Patient created in pre-admission. Need to send HIPAA, consent, and financial responsibility forms.", "patientId": "pt-003", "patientName": "Devon Park", "assignedTo": "user-011", "assignedToName": "Mike Torres", "dueDate": "2026-07-14", "priority": "medium", "status": "pending", "category": "administrative" },
+    { "id": "task-005", "title": "Follow up on Maria Sato's prazosin response", "description": "Patient started prazosin 2mg on 6/20. Check if nightmares have resolved and if dose adjustment is needed.", "patientId": "pt-002", "patientName": "Maria Sato", "assignedTo": "user-009", "assignedToName": "Maya Castellanos", "dueDate": "2026-07-16", "priority": "medium", "status": "pending", "category": "clinical" },
+    { "id": "task-006", "title": "Schedule annual HIPAA training reminder", "description": "11 of 12 staff have completed training. One staff member (James Park) needs reminder.", "patientId": null, "patientName": null, "assignedTo": "user-001", "assignedToName": "Dana Whitlock", "dueDate": "2026-07-18", "priority": "low", "status": "pending", "category": "compliance" },
+    { "id": "task-007", "title": "Prepare supervision notes for Maya Castellanos", "description": "Quarterly supervision review — compile session notes and progress assessment", "patientId": null, "patientName": null, "assignedTo": "user-003", "assignedToName": "Dr. Priya Nair", "dueDate": "2026-07-25", "priority": "medium", "status": "pending", "category": "supervision" },
+    { "id": "task-008", "title": "Verify Aaliyah Johnson's Medicaid renewal", "description": "Medicaid renewal due in 30 days. Need to collect renewal documents and submit.", "patientId": "pt-006", "patientName": "Aaliyah Johnson", "assignedTo": "user-010", "assignedToName": "James Park", "dueDate": "2026-08-10", "priority": "medium", "status": "pending", "category": "billing" }
   ]
 }

@@ -1,26 +1,22 @@
-'use client';
+"use client";
 
-import { CreditCard } from 'lucide-react';
-import { PlaceholderPage } from '@/components/placeholder-page';
+import { CreditCard } from "lucide-react";
 
-export default function BillingMgrPage() {
+export default function Page() {
   return (
-    <PlaceholderPage
-      title="Billing"
-      description="Practice-level billing overview, charges, and claim management"
-      icon={CreditCard}
-      features={[
-        'View practice-level billing dashboard',
-        'Track charge submission and claim status',
-        'Monitor denial rates and aging A/R',
-        'Manage patient statements and payment plans',
-      ]}
-      mockRows={[
-        { label: 'Charges ready', value: '3 charges', badge: 'Action needed', badgeTone: 'warning' },
-        { label: 'Claims in flight', value: '4 claims', badge: 'In progress', badgeTone: 'info' },
-        { label: 'A/R aging (30+ days)', value: '$2,847.00', badge: 'Follow up', badgeTone: 'warning' },
-        { label: 'Denial rate', value: '16.7%', badge: '1 denied', badgeTone: 'danger' },
-      ]}
-    />
+    <div className="mx-auto max-w-4xl">
+      <div className="flex items-center gap-4">
+        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-brand-primary/10">
+          <CreditCard className="h-6 w-6 text-brand-primary" />
+        </div>
+        <div>
+          <h1 className="text-h1 font-bold text-text-primary">Billing</h1>
+          <p className="text-body text-text-secondary">Practice-level billing management</p>
+        </div>
+      </div>
+      <div className="mt-6 rounded-md border border-info/30 bg-info/5 p-4 text-body-sm text-text-secondary">
+        This module is part of the Moonaria prototype. Interactive functionality will be added in a future iteration.
+      </div>
+    </div>
   );
 }
