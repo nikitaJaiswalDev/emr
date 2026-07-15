@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { ShieldCheck, GraduationCap, FileCheck2, AlertTriangle, Download, CheckCircle2, AlertCircle, Clock, FileText, CalendarClock } from 'lucide-react';
+import { ShieldCheck, GraduationCap, FileCheck2, TriangleAlert as AlertTriangle, Download, CircleCheck as CheckCircle2, CircleAlert as AlertCircle, Clock, FileText, CalendarClock } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useRole } from '@/lib/role-context';
 import mockData from '@/lib/mock-data.json';

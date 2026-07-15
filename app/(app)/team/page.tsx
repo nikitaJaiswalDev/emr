@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { UserPlus, Mail, Clock, CheckCircle2, Trash2 } from 'lucide-react';
+import { UserPlus, Mail, Clock, CircleCheck as CheckCircle2, Trash2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useRole } from '@/lib/role-context';
 import { ROLE_LABELS, ROLE_ORDER, teamInvites, users, type Role, type TeamInvite } from '@/lib/mockData';

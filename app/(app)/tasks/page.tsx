@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { ListTodo, Clock, AlertCircle, CheckCircle2, User, FileText, ShieldCheck, Receipt, GraduationCap } from 'lucide-react';
+import { ListTodo, Clock, CircleAlert as AlertCircle, CircleCheck as CheckCircle2, User, FileText, ShieldCheck, Receipt, GraduationCap } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useRole } from '@/lib/role-context';
 import { tasks as initialTasks, type Task } from '@/lib/mockData';

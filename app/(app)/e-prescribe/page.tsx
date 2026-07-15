@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { Pill, Plus, Send, FileText, Clock, CheckCircle2, X } from 'lucide-react';
+import { Pill, Plus, Send, FileText, Clock, CircleCheck as CheckCircle2, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useRole } from '@/lib/role-context';
 import { prescriptions, patients, users, type Prescription } from '@/lib/mockData';

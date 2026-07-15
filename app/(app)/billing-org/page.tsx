@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { CreditCard, Download, CheckCircle2, Clock, Calendar, Users, DollarSign, Receipt } from 'lucide-react';
+import { CreditCard, Download, CircleCheck as CheckCircle2, Clock, Calendar, Users, DollarSign, Receipt } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useRole } from '@/lib/role-context';
 import mockData from '@/lib/mock-data.json';

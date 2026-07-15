@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { FileText, ChevronDown, ChevronRight, FileSignature, Clock, Video, MapPin } from 'lucide-react';
+import { FileText, ChevronDown, ChevronRight, Signature as FileSignature, Clock, Video, MapPin } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useRole } from '@/lib/role-context';
 import { clinicalNotes, patients, type ClinicalNote } from '@/lib/mockData';

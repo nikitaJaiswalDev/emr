@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { Building2, FileText, MapPin, Phone, Mail, User, Calendar, Download, Hospital, Lock, CheckCircle2 } from 'lucide-react';
+import { Building2, FileText, MapPin, Phone, Mail, User, Calendar, Download, Hospital, Lock, CircleCheck as CheckCircle2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useRole } from '@/lib/role-context';
 import mockData from '@/lib/mock-data.json';

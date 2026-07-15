@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { UserCheck, FileText, CheckCircle2, Clock, AlertCircle, Search, ChevronRight } from 'lucide-react';
+import { UserCheck, FileText, CircleCheck as CheckCircle2, Clock, CircleAlert as AlertCircle, Search, ChevronRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useRole } from '@/lib/role-context';
 import { patients as initialPatients, users, type Patient } from '@/lib/mockData';
